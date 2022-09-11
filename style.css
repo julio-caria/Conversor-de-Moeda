@@ -1,0 +1,123 @@
+:root {
+  --body-background: hsl(0, 0%, 7%);
+  --grey-color: hsl(0, 0%, 80%);
+  --input-background: hsl(0, 0%, 9%);
+  --button-background: hsl(110, 63%, 58%);
+  --result-color: hsl(110, 63%, 58%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-color: var(--body-background);
+  background-size: 100vh;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: var(--white-color);
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: var(--white-color);
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input {
+  margin: 12px;
+  padding: 6px;
+  background: var(--input-background);
+  border: none;
+  border-bottom: 1px solid var(--grey-color);
+  color: var(--grey-color);
+}
+
+label {
+  color: var(--white-color);
+}
+
+button {
+  margin-top: 12px;
+  padding: 4px 12px;
+  height: 32px;
+
+  border-radius: 3px;
+  border: none;
+  background: transparent;
+
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  font-weight: 600;
+}
+
+button:hover {
+  color: var(--input-background);
+  background-color: var(--button-background);
+}
+
+.result p.text {
+  color: var(--white-color);
+  font-size: 18px;
+
+  position: absolute;
+  top: 0;
+  left: 12px;
+}
+
+.result {
+  position: relative;
+  margin-top: 24px;
+  margin: 24px auto;
+  background-color: var(--input-background);
+
+  max-width: 256px;
+  width: auto;
+  height: 128px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: var(--grey-color);
+  font-weight: 600;
+
+  padding: 6px 8px;
+}
+
+.result .convertido {
+  font-size: 32px;
+  color: var(--result-color);
+}
+
+.arrow {
+  padding: 12px;
+  margin-inline: 24px;
+  color: var(--white-color);
+  font-size: 48px;
+}
